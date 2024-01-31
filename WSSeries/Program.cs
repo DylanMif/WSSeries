@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<SeriesDBContext>(options =>
-  options.UseNpgsql(builder.Configuration.GetConnectionString("SeriesDB")));
+  options.UseNpgsql(builder.Configuration.GetConnectionString("SeriesDBRemote")));
 
 var app = builder.Build();
 
