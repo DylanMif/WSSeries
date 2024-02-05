@@ -11,7 +11,7 @@ namespace WSSeries.Models.EntityFramework
     {
         [Key]
         [Column("serieid")]
-        public int Serieid { get; set; }
+        public int? Serieid { get; set; }
         [Column("titre")]
         [StringLength(100)]
         public string Titre { get; set; } = null!;

@@ -109,7 +109,7 @@ namespace WSSeries.Controllers.Tests
         public void Test_PostSerie_Reussi()
         {
             // Arrange
-            Serie serieToAdd = new Serie(789, "Test", "Test",
+            Serie serieToAdd = new Serie(1, "Test", "Test",
                 1, 10, 2020, "ABC");
 
             // Act

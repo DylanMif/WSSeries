@@ -89,6 +89,7 @@ namespace WSSeries.Controllers
           {
               return Problem("Entity set 'SeriesDBContext.Series'  is null.");
           }
+            serie.Serieid = null;
             _context.Series.Add(serie);
             await _context.SaveChangesAsync();
 
